@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(images/back.jpg);
+  background-size: cover;
+}
+.title{
+    text-align: center;
+    font-size: 4vh;
+    padding: 2vh;
+    color: #9343a3;
+}
+.choicetxt{
+    color: #f1b3d8;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.icon img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 15px;
+    object-fit: cover;
+    cursor: pointer;
+
+    transition: 
+        background 1.4s ease,
+        box-shadow 1.2s ease,
+        opacity 0.3s ease;
+}
+.icon{
+    margin: 0px 10px;
+}
+.icon img:hover{
+    background: linear-gradient(50deg, #ffffff, #da73dc);
+    box-shadow: 0 0 10px #edd3ea;
+    opacity: 0.9;
+}
+.iconarea{
+    display: flex;
+    flex-direction: column;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+}
+#box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.gamearea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    padding: 2rem;
+    width: min(90vh,580px);
+    text-align: center;
+    box-shadow: 0 0 10px #c23fa5;
+    width: 50%;
+    height: 50%;
+}
+.comparea{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 5px;
+}
+.comptxt{
+    color: #da73dc;
+    padding: 5px 10px;
+}
+.compchoice{
+    color: #f1b3d8;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scoretxt{
+    text-decoration: underline;
+    padding-top: 10px;    
+    color: #c23fa5;
+}
+.pts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.2rem;
+}
+.msgarea{
+    padding: 4px 20px 4px 20px;
+    border-radius: 5px;
+    background: #f1b3d8;
+    color: #380643;
+}
+.ysc {
+    color: #edd3ea;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 5px;
+}
+.csc{
+    color: #edd3ea;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1px 5px;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .gamearea {
+        width: 100%;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .icons {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .icon img {
+        width: 45px;
+        height: 45px;
+        padding: 12px;
+    }
+
+    .choicetxt,
+    .comptxt,
+    .scoretxt,
+    .msgarea h3 {
+        font-size: 0.9rem;
+    }
+
+    .msgarea {
+        margin-top: 10px;
+    }
+}
